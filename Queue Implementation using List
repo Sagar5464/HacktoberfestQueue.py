@@ -8,4 +8,4 @@ class Queue:
     def dequeue(self):
         if not self.q:
             return None
-        return self.q.pop()  # ❌ Removes from end (acts like stack)
+        return self.q.pop(0)  # ✅ Remove from front (FIFO)
