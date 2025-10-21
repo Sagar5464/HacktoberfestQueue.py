@@ -1,0 +1,11 @@
+class Queue:
+    def __init__(self):
+        self.q = []
+
+    def enqueue(self, val):
+        self.q.append(val)
+
+    def dequeue(self):
+        if not self.q:
+            return None
+        return self.q.pop()  # ❌ Removes from end (acts like stack)
